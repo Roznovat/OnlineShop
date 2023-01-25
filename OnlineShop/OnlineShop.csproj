@@ -33,8 +33,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.2.5\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +69,127 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comentarii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comentarii.Designer.cs">
+      <DependentUpon>Comentarii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domenii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Domenii.Designer.cs">
+      <DependentUpon>Domenii.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaComentarii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaComentarii.Designer.cs">
+      <DependentUpon>ModificaComentarii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaDomenii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaDomenii.Designer.cs">
+      <DependentUpon>ModificaDomenii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaProducatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaProducatori.Designer.cs">
+      <DependentUpon>ModificaProducatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaProduse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaProduse.Designer.cs">
+      <DependentUpon>ModificaProduse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaTranzactii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaTranzactii.Designer.cs">
+      <DependentUpon>ModificaTranzactii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaVanzari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaVanzari.Designer.cs">
+      <DependentUpon>ModificaVanzari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producatori.Designer.cs">
+      <DependentUpon>Producatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produse.Designer.cs">
+      <DependentUpon>Produse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tranzactii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tranzactii.Designer.cs">
+      <DependentUpon>Tranzactii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vanzari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vanzari.Designer.cs">
+      <DependentUpon>Vanzari.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Comentarii.resx">
+      <DependentUpon>Comentarii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Domenii.resx">
+      <DependentUpon>Domenii.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaComentarii.resx">
+      <DependentUpon>ModificaComentarii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaDomenii.resx">
+      <DependentUpon>ModificaDomenii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaProducatori.resx">
+      <DependentUpon>ModificaProducatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaProduse.resx">
+      <DependentUpon>ModificaProduse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaTranzactii.resx">
+      <DependentUpon>ModificaTranzactii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaVanzari.resx">
+      <DependentUpon>ModificaVanzari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producatori.resx">
+      <DependentUpon>Producatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produse.resx">
+      <DependentUpon>Produse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +200,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tranzactii.resx">
+      <DependentUpon>Tranzactii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vanzari.resx">
+      <DependentUpon>Vanzari.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +219,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Storage\Storage.csproj">
+      <Project>{470d3141-4ad5-4028-adac-4180b781ae6e}</Project>
+      <Name>Storage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
